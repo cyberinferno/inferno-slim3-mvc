@@ -1,0 +1,37 @@
+{
+    "name": "cyberinferno/inferno-slim3-mvc",
+    "description": "Easy to use Slim3 MVC application boilerplate",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Karthik P",
+            "email": "karthikreadnovel@gmail.com",
+            "homepage": "http://www.coderkarthik.com/"
+        }
+    ],
+    "require": {
+        "php": ">=5.6",
+        "monolog/monolog": "^1.17",
+        "slim/csrf": "^0.8.3",
+        "slim/php-view": "^2.0",
+        "slim/slim": "^3.1",
+        "vlucas/phpdotenv": "^2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "InfernoSlimMvc\\controllers\\": "controllers",
+            "InfernoSlimMvc\\models\\": "models"
+        }
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master"
+    },
+    "config": {
+        "process-timeout": 0,
+        "sort-packages": true
+    },
+    "scripts": {
+        "start": "php -S localhost:8080"
+    }
+}
